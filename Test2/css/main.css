@@ -1,0 +1,224 @@
+
+/*Styles*/
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:local("../fonts/Poppins-Regular") format('ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: bold;
+     font-weight: 700;
+    src: local("../fonts/Poppins-Bold") format('ttf');
+}
+
+html{
+    box-sizing: border-box;
+}
+*, * ::before, *::after{
+    box-sizing: inherit;
+}
+
+.size{
+    font-family: 'Roboto';
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: 100%;
+    font-weight: 400;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:193px;
+       
+}
+
+.image{
+    padding: 20px;
+    max-width: 899.82px;
+    height: 100%;
+    background: url(../img/back.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+
+.login__form{
+    padding-top: 253px;
+    color: black;
+    margin-right: 15px;
+    
+}
+.reg__form{
+    width: 350px;
+    height: 50px;
+    font-size: 16px;
+    color: #2D3748;
+    padding-left: 20px;
+}
+
+.log__account{
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 35.16px;
+    padding-bottom: 13px;
+    font-weight: 700;
+    
+}
+
+.data{
+    font-size: 16px;
+    color: #4A5568;
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+.forgot__password{
+    padding-left: 119px;
+    text-decoration: none;
+    color:#2C5282;
+}
+
+.keeplogin{
+    padding-top: 28px;
+    padding-bottom: 27px;
+}
+
+.btn{
+    padding-bottom: 15px;
+}
+
+.Login__btn{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    width: 347px;
+    height: 50px;
+    background-color: #04C35C;
+    color:white;
+}
+
+.Login__btn:hover,.Login__btn:focus,.Login__btn:active{
+    cursor: pointer;
+    background-color: #1da65d;
+}
+
+.sign__google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    width: 347px;
+    height: 50px;
+    background-color:#2D3748;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.sign__google:hover,
+.sign__google:focus,
+.sign__google:active {
+    cursor: pointer;
+    background-color: #3c4e6e;
+}
+
+.modal__window{
+    display: none;
+    position: relative;
+    bottom:400px;
+    left: 700px;
+    z-index: 999;
+    width: 30%;
+    height: 30%;
+    overflow: auto;
+    background: rgba(7, 50, 42, 0.9);
+}
+
+.modal__content{
+    margin: 15% auto;
+    padding-left: 20%;
+    color: white;
+    font-size: 30px;
+}
+
+.close{
+    position: absolute;
+    bottom: 180px;
+    left: 580px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+    
+@media all and (max-width: 912px){
+
+
+    .grid{
+        display: block;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .login__form{
+        position: relative;
+        bottom: 200px;
+        padding-left: 30px;
+        background: url(../img/back.jpg) no-repeat center;
+        width: 100%;
+        background-size: cover;
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .modal__window {
+    display: none;
+    position: relative;
+    bottom: 400px;
+    left: 150px;
+    z-index: 999;
+    width: 60%;
+    height: 30%;
+    overflow: auto;
+    background: rgba(7, 50, 42, 0.9);
+    }
+
+    .data{
+        color: red;
+    }
+
+    .keeplogin{
+        color: red;
+    }
+    
+    .forgot__password{
+        color: red;
+        padding-left: 50px;
+    }
+
+    .reg__form {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        color: #2D3748;
+        padding-left: 20px;
+    }
+
+    .Login__btn{
+        width: 200px;
+    }
+
+    .sign__google{
+        width: 200px;
+    }
+}
+@media all and (min-width: 990px){
+    .grid{
+        gap:90px
+    }
+}

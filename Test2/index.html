@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="size">
+        <div class="grid">
+          <div class="image"></div>
+          <div class="login__form">
+            <h1 class="log__account">Login to your account</h1>
+            <form action="" class="form">
+              <div>
+                <div>
+                  <p class="data">Email</p>
+                  <input
+                    class="reg__form email__name"
+                    name="email"
+                    id="email"
+                    type="text"
+                    required="required"
+                    placeholder="John.snow@gmail.com"
+                  />
+                  <br />
+                  <span class="error" style="color: red; display: block"></span>
+                </div>
+                <div>
+                  <p class="data">Password</p>
+                  <input
+                    class="reg__form password__name"
+                    id="password"
+                    name="password"
+                    type="password"
+                    required="required"
+                    placeholder="*********"
+                  />
+                  <br />
+                  <span class="error" style="color: red; display: block"></span>
+                </div>
+              </div>
+              <p class="keeplogin">
+                <input type="checkbox" class="remember" />
+                <label for="">Remember me</label>
+                <a class="forgot__password" href="">Forgot password?</a>
+              </p>
+            </form>
+            <div class="btn">
+              <a href="#!">
+                <button type="submit" class="Login__btn">Login now</button>
+              </a>
+            </div>
+            <div>
+              <a href="#!">
+                <button type="button" class="sign__google">
+                  <img src="./img/SVG/GoogleIcon.svg" alt="" />
+                  Or sign-in with google
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__window">
+        <p class="modal__content">Регистрация прошла успешно</p>
+        <button type="button" class="close">&times;</button>
+      </div>
+    </main>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
